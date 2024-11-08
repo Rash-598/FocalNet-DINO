@@ -225,10 +225,10 @@ def build_backbone(args):
                         parameter.requires_grad_(False)
                         break
 
-        pretrained_dir = './'
+        pretrained_dir = '/home/t-sharmara/cvpr_focal_net/checkpoints'
         PTDICT = {
             'focalnet_L_384_22k': 'focalnet_large_lrf_384.pth',
-            'focalnet_L_384_22k_fl4': 'focalnet_large_lrf_384_fl4.pth',            
+            'focalnet_L_384_22k_fl4': 'focalnet_large_fl4_pretrained_on_o365.pth',
             'focalnet_XL_384_22k': 'focalnet_xlarge_lrf_384.pth',
             'focalnet_XL_384_22k_fl4': 'focalnet_xlarge_lrf_384_fl4.pth',
             'focalnet_H_224_22k': 'focalnet_huge_lrf_224.pth', 

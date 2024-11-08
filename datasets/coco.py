@@ -714,6 +714,7 @@ def build(image_set, args):
     # add some hooks to datasets
     aux_target_hacks_list = get_aux_target_hacks_list(image_set, args)
     img_folder, ann_file = PATHS[image_set]
+    print(img_folder, ann_file)
 
     # copy to local path
     if os.environ.get('DATA_COPY_SHILONG') == 'INFO':
